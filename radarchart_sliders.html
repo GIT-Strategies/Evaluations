@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Evaluation Radar Chart</title>
-    <!-- Updated CSS file reference -->
+    <!-- CSS for layout and styling -->
     <link rel="stylesheet" href="styles_radarsliders.css">
+
+    <!-- Load jsPDF for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Load Chart.js for radar chart generation -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Load html2canvas for capturing elements as images -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
 </head>
 <body>
     <h1>Player Evaluation Radar Chart</h1>
     <div class="container">
+        <!-- Left section for sliders and player data -->
         <div class="left-section">
             <input type="text" id="playerName" placeholder="Enter Player Name" />
             <button id="savePlayer">Save Player</button>
@@ -62,6 +73,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Right section for radar chart and comments -->
         <div class="right-section">
             <select id="playerList" class="player-select">
                 <option value="">Select a Player</option>
@@ -72,9 +85,7 @@
         </div>
     </div>
 
-    <!-- Include jsPDF and html2canvas for PDF and canvas generation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <!-- Custom script file -->
     <script src="scripts_radarsliders.js"></script>
 </body>
 </html>
