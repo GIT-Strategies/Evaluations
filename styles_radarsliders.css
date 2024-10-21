@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+#playerName, #savePlayer {
+    margin-bottom: 20px;
+}
+
+.feedback-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slider-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+.score-slider {
+    width: 200px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: #333333;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.score-slider:hover {
+    opacity: 1;
+}
+
+.score-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #C8A563;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.score-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #C8A563;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-select {
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#comments #comments {
+    width: 800px; /* Matching the radar chart's width */
+    height: 150px; /* Ensuring enough space for comments */
+    font-family: 'Times New Roman', serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+#downloadChart {
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+}
